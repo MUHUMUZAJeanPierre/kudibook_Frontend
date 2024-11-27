@@ -13,18 +13,20 @@ const App: React.FC = () => {
     <>
       <div className="md:flex">
         <Sidebar />
+
         <div className="flex-1">
           <Topbar />
-          <div className="flex-wrap justify-center flex dot-background absolute p-2 gap-1">
+          <div className="flex-wrap md:justify-around justify-center flex dot-background p-2 gap-6 ">
             <ToDo />
             <OnProgress />
             <InReview />
             <Completed />
           </div>
         </div>
+
       </div>
     </>
   );
-}
+};
 
 export default App;
