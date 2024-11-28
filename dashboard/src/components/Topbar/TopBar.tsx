@@ -19,6 +19,7 @@ import { CiCircleList } from "react-icons/ci";
 import img from '../../assets/Screenshot 2024-11-21 143106.png';
 import quarte from '../../assets/quarte.png';
 import { IoChevronForwardOutline } from "react-icons/io5";
+import TeamAvatars from '../TeamAvatars/TeamAvatars';
 
 const Topbar: React.FC = () => {
     return (
@@ -97,7 +98,8 @@ const Topbar: React.FC = () => {
                 </div>
 
                 <div className="flex items-center gap-2">
-                    <img src={quarte} className="w-24 h-8 rounded-full object-cover" alt="User" />
+                    <TeamAvatars />
+                    {/* <img src={quarte} className="w-24 h-8 rounded-full object-cover" alt="User" /> */}
                     <div className="flex items-center bg-[#745bf7] px-3 py-1 rounded-md">
                         <span className="text-white">
                             <IoMdContact />
