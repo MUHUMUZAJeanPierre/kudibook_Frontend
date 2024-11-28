@@ -82,7 +82,7 @@ const TaskItem: React.FC<TaskItemProps> = ({ task }) => {
                     {task.assignees.map((_, index) => (
                         <img
                             key={index}
-                            src={index % 2 === 0 ? white_two : white_three} // Alternate images
+                            src={index % 2 === 0 ? white_two : white_three} 
                             className="w-5 h-5 rounded-full"
                             alt={`User ${index + 1}`}
                         />
@@ -141,7 +141,6 @@ const Completed: React.FC = () => {
 
     return (
         <div className="bg-[#f9fbfc] w-56 p-2 rounded-lg shadow-lg">
-            {/* Header */}
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                     <span className="w-[0.4rem] h-[1.2rem] bg-green-500 rounded"></span>
@@ -164,7 +163,6 @@ const Completed: React.FC = () => {
                 <TaskItem key={index} task={task} />
             ))}
 
-            {/* Add New Task */}
             <div className="border border-dashed flex border-gray-400 items-center justify-center gap-2 mt-3 p-2 rounded-md">
                 <span className="font-medium text-gray-500 text-[0.625rem]">
                     <BsPlus />
