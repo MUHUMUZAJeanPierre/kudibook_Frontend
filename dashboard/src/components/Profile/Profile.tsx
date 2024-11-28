@@ -5,7 +5,7 @@ import img from "../../assets/logo_2.png";
 const Profile: React.FC = () => {
   return (
     <div className="flex flex-col sm:flex-row justify-evenly gap-2 border border-gray-200 items-center rounded-[0.3rem] p-2 w-full max-w-md">
-      <div className="w-10 h-10 bg-red-400">
+      <div className="w-10 h-10">
         <img
           src={img}
           alt="Logo"

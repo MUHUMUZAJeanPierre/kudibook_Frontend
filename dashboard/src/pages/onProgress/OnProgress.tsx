@@ -40,7 +40,7 @@ const TaskItem: React.FC<{ task: Task }> = ({ task }) => {
         </div>
       </div>
       {task.showImage && (
-        <div className='h-24 mb-2 bg-red-500 object-cover'>
+        <div className='h-24 mb-2  object-cover'>
           <img src={task.image} className='w-full h-full' alt="Task" />
         </div>
       )}
