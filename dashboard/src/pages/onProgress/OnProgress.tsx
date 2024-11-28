@@ -127,7 +127,7 @@ const OnProgress: React.FC = () => {
   ];
 
   return (
-    <div className='bg-[#f9fbfc] w-56 p-2 rounded-lg shadow-lg'>
+    <div className='bg-[#f9fbfc] w-60 p-2 rounded-lg shadow-lg'>
       <div className='flex items-center justify-between'>
         <div className='flex items-center gap-2'>
           <span className='w-[0.4rem] h-[1.2rem] bg-[#fbc146] rounded'></span>

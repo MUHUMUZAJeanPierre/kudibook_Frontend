@@ -16,7 +16,7 @@ const App: React.FC = () => {
 
         <div className="flex-1">
           <Topbar />
-          <div className="flex-wrap md:justify-around justify-center flex dot-background p-2 gap-6 ">
+          <div className="flex-wrap md:justify-around justify-center flex dot-background p-2 gap-3 ">
             <ToDo />
             <OnProgress />
             <InReview />
