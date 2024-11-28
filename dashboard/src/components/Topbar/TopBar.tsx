@@ -17,7 +17,6 @@ import { LuKanbanSquare } from "react-icons/lu";
 import { CiCalendarDate } from "react-icons/ci";
 import { CiCircleList } from "react-icons/ci";
 import img from '../../assets/Screenshot 2024-11-21 143106.png';
-import quarte from '../../assets/quarte.png';
 import { IoChevronForwardOutline } from "react-icons/io5";
 import TeamAvatars from '../TeamAvatars/TeamAvatars';
 
