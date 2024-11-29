@@ -1,4 +1,3 @@
-import React from 'react';
 import whiteOne from '../../assets/white_one.avif'; 
 import whiteTwo from '../../assets/white_two.jpg';
 import whiteThree from '../../assets/white_three.jpg'; 
