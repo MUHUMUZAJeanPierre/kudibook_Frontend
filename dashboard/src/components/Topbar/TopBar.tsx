@@ -20,6 +20,7 @@ import img from '../../assets/Screenshot 2024-11-21 143106.png';
 import { IoChevronForwardOutline } from "react-icons/io5";
 import TeamAvatars from '../TeamAvatars/TeamAvatars';
 
+
 const Topbar: React.FC = () => {
     return (
         <div className="rounded-t-[0.625rem]  border border-gray-200">
