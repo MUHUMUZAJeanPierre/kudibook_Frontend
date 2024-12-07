@@ -23,8 +23,8 @@ import TeamAvatars from '../TeamAvatars/TeamAvatars';
 
 const Topbar: React.FC = () => {
     return (
-        <div className="rounded-t-[0.625rem]  border border-gray-200">
-            <div className="rounded-t-[0.625rem] border-b-[0.029rem] border-gray-200 flex flex-col md:flex-row items-center justify-center md:justify-between p-4 gap-4">
+        <div className="rounded-t-[0.625rem]  border border-gray-300">
+            <div className="rounded-t-[0.625rem] border-b-[0.029rem] border-gray-300 flex flex-col md:flex-row items-center justify-center md:justify-between p-4 gap-4 ">
                 <div className="flex items-center gap-2 flex-wrap justify-center">
                     <div className="flex items-center gap-1">
                         <span>
@@ -100,11 +100,11 @@ const Topbar: React.FC = () => {
                 <div className="flex items-center gap-2">
                     <TeamAvatars />
                     {/* <img src={quarte} className="w-24 h-8 rounded-full object-cover" alt="User" /> */}
-                    <div className="flex items-center bg-[#745bf7] px-3 py-1 rounded-md">
+                    <div className="flex items-center justify-evenly gap-2 bg-[#745bf7] px-5 py-2 rounded-md">
                         <span className="text-white">
                             <IoMdContact />
                         </span>
-                        <button className="text-white px-4 py-1  transition-colors duration-200">Invite</button>
+                        <button className="text-white items-center  transition-colors duration-200">Invite</button>
                     </div>
                 </div>
             </div>
