@@ -25,7 +25,7 @@ interface Task {
 
 const TaskItem: React.FC<{ task: Task }> = ({ task }) => {
   return (
-    <div className='bg-white p-4 mt-4 rounded-lg shadow-inner'>
+    <div className='p-4 mt-4 bg-white rounded-lg shadow-inner'>
       <div className='flex justify-between mb-2'>
         <div className='flex gap-1'>
           <div className={`flex items-center bg-[#fdf4f3] w-auto px-2 py-1 rounded-md `}>
@@ -40,7 +40,7 @@ const TaskItem: React.FC<{ task: Task }> = ({ task }) => {
         </div>
       </div>
       {task.showImage && (
-        <div className='h-24 mb-2  object-cover'>
+        <div className='object-cover h-24 mb-2'>
           <img src={task.image} className='w-full h-full' alt="Task" />
         </div>
       )}
@@ -50,7 +50,7 @@ const TaskItem: React.FC<{ task: Task }> = ({ task }) => {
       </div>
 
       <div>
-        <div className='flex justify-between items-center mb-1'>
+        <div className='flex items-center justify-between mb-1'>
           <div className='flex items-center gap-2 text-gray-600'>
             <span className='text-gray-500 text-[0.625rem]'>
 
@@ -66,8 +66,8 @@ const TaskItem: React.FC<{ task: Task }> = ({ task }) => {
           <div className={`w-[5rem] bg-[#3e19dd] h-full rounded`}></div>
         </div>
       </div>
-      <div className='flex justify-between items-center mt-3'>
-        <div className='flex justify-between items-center'>
+      <div className='flex items-center justify-between mt-3'>
+        <div className='flex items-center justify-between'>
           {task.assignees.map((_, index) => {
             const assigneeImage = (task.priority === 'High') ? white_two : white_three;
             return (
@@ -75,8 +75,8 @@ const TaskItem: React.FC<{ task: Task }> = ({ task }) => {
             );
           })}
         </div>
-        <div className="flex items-center border px-1 rounded-sm justify-center gap-2">
-          <div className="flex justify-evenly items-center gap-1">
+        <div className="flex items-center justify-center gap-2 px-1 border rounded-sm">
+          <div className="flex items-center gap-1 justify-evenly">
             <span className=" font-semibold text-[0.7rem]">
               <AiOutlineMessage />
             </span>
@@ -137,10 +137,10 @@ const OnProgress: React.FC = () => {
           </div>
         </div>
         <div className='flex gap-2'>
-          <span className='cursor-pointer hover:text-red-700 transition'>
+          <span className='transition cursor-pointer hover:text-red-700'>
             <BsPlusLg size={14} />
           </span>
-          <span className='cursor-pointer hover:text-red-700 transition'>
+          <span className='transition cursor-pointer hover:text-red-700'>
             <BsThreeDotsVertical size={14} />
           </span>
         </div>
@@ -151,7 +151,7 @@ const OnProgress: React.FC = () => {
         <TaskItem key={index} task={task} />
       ))}
 
-      <div className='border border-dashed border-gray-400 flex items-center justify-center gap-2 mt-3 p-2 rounded-md'>
+      <div className='flex items-center justify-center gap-2 p-2 mt-3 border border-gray-400 border-dashed rounded-md'>
         <span className='font-medium text-gray-500 text-[0.625rem]'>
           <BsPlus />
 
