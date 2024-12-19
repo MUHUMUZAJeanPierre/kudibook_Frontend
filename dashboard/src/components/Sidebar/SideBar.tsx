@@ -37,10 +37,10 @@ const Sidebar: React.FC = () => {
     ];
 
     return (
-        <div className="rounded-t-[0.625rem] sm:w-[19%] h-full lg:overflow-hidden sm:overflow-auto bg-[#f6f8fa]  ">
-            <div className=" md:fixed lg:left-0 lg:top-0 scrollbar-hidden flex flex-col p-2 border rounded-t-[0.625rem]  sm:w-[19%] h-full border-gray-100 lg:overflow-hidden sm:overflow-auto bg-[#f6f8fa]  ">
-                <div className="flex flex-col gap-6 border-cyan-500">
-                    <div className="flex flex-col gap-3 items-center sm:items-start border-orange-500">
+        <div className="rounded-t-[0.625rem] sm:w-[19%] h-full lg:overflow-hidden sm:overflow-auto bg-[#f6f8fa]   ">
+            <div className="md:fixed lg:left-0 lg:top-0 scrollbar-hidden flex flex-col border rounded-t-[0.625rem]  sm:w-[19%] h-full border-gray-100 lg:overflow-hidden sm:overflow-auto bg-[#f6f8fa] p-2  ">
+                <div className="flex flex-col gap-4 border-cyan-500">
+                    <div className="flex flex-col items-center gap-3 border-orange-500 sm:items-start">
                         <Profile />
                         <Search />
                     </div>

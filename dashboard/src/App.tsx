@@ -7,23 +7,23 @@ import "./index.css";
 import ToDo from "./pages/toDo/Todo";
 import Topbar from "./components/Topbar/TopBar";
 import Sidebar from "./components/Sidebar/SideBar";
+import { Container, Draggable } from "react-smooth-dnd"; 
 
 const App: React.FC = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row gap-0">
+      <div className="flex flex-col gap-0 md:flex-row">
         <Sidebar />
 
-        <div className="flex-1 flex flex-col">
+        <div className="flex flex-col flex-1">
           <Topbar />
-          <div className="flex flex-wrap justify-center md:justify-around p-2 gap-2 dot-background">
+          <div className="flex flex-wrap justify-center gap-2 md:gap-2 md:justify-around ">
             <ToDo />
             <OnProgress />
             <InReview />
             <Completed />
           </div>
         </div>
-        
       </div>
     </>
   );

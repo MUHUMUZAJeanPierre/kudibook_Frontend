@@ -13,7 +13,7 @@ import { FiShare2 } from "react-icons/fi";
 import { BsBookmark, BsThreeDots } from "react-icons/bs";
 import { TbTimelineEventX } from "react-icons/tb";
 import { IoIosLink } from "react-icons/io";
-import { LuKanbanSquare } from "react-icons/lu";
+// import { LuKanbanSquare } from "react-icons/lu";
 import { CiCalendarDate } from "react-icons/ci";
 import { CiCircleList } from "react-icons/ci";
 import img from '../../assets/Screenshot 2024-11-21 143106.png';
@@ -25,7 +25,7 @@ const Topbar: React.FC = () => {
     return (
         <div className="rounded-t-[0.625rem]  border border-gray-300">
             <div className="rounded-t-[0.625rem] border-b-[0.029rem] border-gray-300 flex flex-col md:flex-row items-center justify-center md:justify-between p-4 gap-4 ">
-                <div className="flex items-center gap-2 flex-wrap justify-center">
+                <div className="flex flex-wrap items-center justify-center gap-2">
                     <div className="flex items-center gap-1">
                         <span>
                             <IoIosArrowBack />
@@ -48,7 +48,7 @@ const Topbar: React.FC = () => {
                     <p className="text-sm ">Beling Pottery</p>
                 </div>
 
-                <div className="flex items-center gap-2 justify-center">
+                <div className="flex items-center justify-center gap-2">
                     <GoPlus />
                     <p className="text-sm">New Tab</p>
                     <span className="text-gray-400" >
@@ -68,8 +68,8 @@ const Topbar: React.FC = () => {
             </div>
 
             {/* Second Row */}
-            <div className="p-4 flex flex-col items-center gap-4 md:flex-row md:justify-between">
-                <div className="flex flex-col md:flex-row md:justify-between items-center gap-4">
+            <div className="flex flex-col items-center gap-4 p-4 md:flex-row md:justify-between">
+                <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between">
                     <div className="w-10 h-10 rounded-[1.2rem]">
                         <img src={img} className="w-full h-full rounded-[0.5rem] object-cover" alt="Project" />
                     </div>
@@ -99,22 +99,22 @@ const Topbar: React.FC = () => {
 
                 <div className="flex items-center gap-2">
                     <TeamAvatars />
-                    {/* <img src={quarte} className="w-24 h-8 rounded-full object-cover" alt="User" /> */}
+                    {/* <img src={quarte} className="object-cover w-24 h-8 rounded-full" alt="User" /> */}
                     <div className="flex items-center justify-evenly gap-2 bg-[#745bf7] px-5 py-2 rounded-md">
                         <span className="text-white">
                             <IoMdContact />
                         </span>
-                        <button className="text-white items-center  transition-colors duration-200">Invite</button>
+                        <button className="items-center text-white transition-colors duration-200">Invite</button>
                     </div>
                 </div>
             </div>
 
             {/* Third Row */}
-            <div className="p-4 flex flex-col md:flex-row md:flex-wrap justify-between gap-4">
-                <div className="flex flex-col sm:flex-row items-center justify-evenly gap-4 border border-gray-200 rounded-md px-2 py-1 w-full md:w-auto">
+            <div className="flex flex-col justify-between gap-4 p-4 md:flex-row md:flex-wrap">
+                <div className="flex flex-col items-center w-full gap-4 px-2 py-1 border border-gray-200 rounded-md sm:flex-row justify-evenly md:w-auto">
                     <div className="flex items-center gap-1 bg-gray-100 p-1 rounded-[0.5rem] shadow-sm">
                         <span className="text-[0.75rem]">
-                            <LuKanbanSquare />
+                            {/* <LuKanbanSquare /> */}
                         </span>
                         <p className="text-[0.75rem]">Kanban</p>
                     </div>
@@ -149,18 +149,18 @@ const Topbar: React.FC = () => {
                         <IoIosLink />
                     </span>
                     <p className="text-[0.75rem]">Integrate</p>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Slack_icon_2019.svg" className='w-2 h-2 object-cover  ' alt="" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Slack_icon_2019.svg" className='object-cover w-2 h-2 ' alt="" />
                     <span className="text-gray-500">
 
                         <RxDividerVertical />
                     </span>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Google_Chrome_icon_%28February_2022%29.svg" className='w-2 h-2 object-cover' alt="" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Google_Chrome_icon_%28February_2022%29.svg" className='object-cover w-2 h-2' alt="" />
                     <span className="text-gray-500">
 
                         <RxDividerVertical />
                     </span>
 
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/320px-Gmail_icon_%282020%29.svg.png" className='w-2 h-2 object-cover  ' alt="" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/320px-Gmail_icon_%282020%29.svg.png" className='object-cover w-2 h-2 ' alt="" />
                 </div>
             </div>
         </div>
